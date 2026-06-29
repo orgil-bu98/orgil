@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Menu, X, ArrowRight, Compass, Sparkles, Map, Database, ArrowUpRight, Layers, Volume2, VolumeX, Play, Pause, Music, Phone, Mail, Instagram, Facebook, Bot } from 'lucide-react';
-import IdolCoachChat from './components/IdolCoachChat';
 import MeAIChatPopup from './components/MeAIChatPopup';
+import IdolCoachChat from './components/IdolCoachChat';
 
 const SPOTLIGHT_R = 260;
 const BG_IMAGE_1 = "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260609_195923_b0ba8ace-1d1d-4f2c-9a28-1ab84b330680.png&w=1280&q=85";
