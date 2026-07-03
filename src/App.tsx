@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { Menu, X, ArrowRight, Compass, Sparkles, Map, Database, ArrowUpRight, Layers, Volume2, VolumeX, Play, Pause, Music, Phone, Mail, Instagram, Facebook, Bot } from 'lucide-react';
 import MeAIChatPopup from './components/MeAIChatPopup';
 import IdolCoachChat from './components/IdolCoachChat';
+import AnimeGuessGame from './components/AnimeGuessGame';
+import FamousPeopleGuessGame from './components/FamousPeopleGuessGame';
 
 const SPOTLIGHT_R = 260;
 const BG_IMAGE_1 = "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260609_195923_b0ba8ace-1d1d-4f2c-9a28-1ab84b330680.png&w=1280&q=85";
@@ -206,7 +208,7 @@ export default function App() {
 
         {/* Center Pill Menu (Desktop only) */}
         <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full px-2 py-2 items-center gap-1 z-50">
-          {['Home', 'Бидний тухай', '🤖 My Idol'].map((tab) => (
+          {['Home', 'Бидний тухай', '🤖 My Idol', '🎮 Anime Guess', '👥 Guess Famous'].map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
@@ -294,7 +296,7 @@ export default function App() {
         <div className="fixed inset-0 bg-black/95 backdrop-blur-lg z-[105] flex flex-col justify-between p-8 pt-24 md:hidden animate-fade-in">
           <div className="flex flex-col gap-6">
             <span className="text-xs font-mono uppercase tracking-widest text-orange-500/80 mb-2">Navigation Menu</span>
-            {['Home', 'Бидний тухай', '🤖 My Idol'].map((tab) => (
+            {['Home', 'Бидний тухай', '🤖 My Idol', '🎮 Anime Guess', '👥 Guess Famous'].map((tab) => (
               <button
                 key={tab}
                 onClick={() => {
@@ -662,10 +664,20 @@ export default function App() {
               </div>
             </div>
           </div>
-        ) : (
+        ) : activeTab === '🤖 My Idol' ? (
           /* '🤖 My Idol' Active Tab Content with Chat Window */
           <div className="absolute inset-0 z-40 flex items-center justify-center p-4 sm:p-8 md:p-12 bg-black/60 backdrop-blur-md overflow-y-auto pt-24 pb-12">
             <IdolCoachChat onBack={() => setActiveTab('Home')} />
+          </div>
+        ) : activeTab === '🎮 Anime Guess' ? (
+          /* '🎮 Anime Guess' Active Tab Content with Anime Guess Game */
+          <div className="absolute inset-0 z-40 flex items-center justify-center p-4 sm:p-8 md:p-12 bg-black/60 backdrop-blur-md overflow-y-auto pt-24 pb-12 animate-fade-in">
+            <AnimeGuessGame onBack={() => setActiveTab('Home')} />
+          </div>
+        ) : (
+          /* '👥 Guess Famous' Active Tab Content with Famous People Guess Game */
+          <div className="absolute inset-0 z-40 flex items-center justify-center p-4 sm:p-8 md:p-12 bg-black/60 backdrop-blur-md overflow-y-auto pt-24 pb-12 animate-fade-in">
+            <FamousPeopleGuessGame onBack={() => setActiveTab('Home')} />
           </div>
         )}
       </section>
