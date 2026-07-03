@@ -8,6 +8,7 @@ interface FamousPersonQuestion {
   options: string[];
   hint1: string; // Profession and Country
   hint2: string; // Fun fact / major achievement
+  imageUrl?: string;
 }
 
 const FAMOUS_PEOPLE_QUESTIONS: FamousPersonQuestion[] = [
@@ -17,7 +18,8 @@ const FAMOUS_PEOPLE_QUESTIONS: FamousPersonQuestion[] = [
     name: 'Чингис Хаан',
     options: ['Жамуха', 'Өгөдэй Хаан', 'Чингис Хаан', 'Хубилай Хаан'],
     hint1: 'Улс: Монгол Улс | Мэргэшил: Их Хаан, цэргийн гарамгай жанжин',
-    hint2: '13-р зуунд тархай бутархай Монгол аймгуудыг нэгтгэж, хүн төрөлхтний түүхэн дэх хамгийн том хуурай газрын эзэнт гүрнийг байгуулсан суут хүн.'
+    hint2: '13-р зуунд тархай бутархай Монгол аймгуудыг нэгтгэж, хүн төрөлхтний түүхэн дэх хамгийн том хуурай газрын эзэнт гүрнийг байгуулсан суут хүн.',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/YuanEmpPortraitGenghisKhann.jpg/500px-YuanEmpPortraitGenghisKhann.jpg'
   },
   {
     id: 2,
@@ -25,7 +27,8 @@ const FAMOUS_PEOPLE_QUESTIONS: FamousPersonQuestion[] = [
     name: 'Cristiano Ronaldo',
     options: ['Lionel Messi', 'Cristiano Ronaldo', 'Neymar Jr', 'Kylian Mbappe'],
     hint1: 'Улс: Португал | Мэргэшил: Мэргэжлийн хөлбөмбөгчин',
-    hint2: 'Дэлхийн 5 удаагийн шилдэг хөлбөмбөгчин (Алтан бөмбөг), "CR7" нэрээрээ дэлхийд алдартай бөгөөд асар олон гоолын дээд амжилтыг эзэмшдэг.'
+    hint2: 'Дэлхийн 5 удаагийн шилдэг хөлбөмбөгчин (Алтан бөмбөг), "CR7" нэрээрээ дэлхийд алдартай бөгөөд асар олон гоолын дээд амжилтыг эзэмшдэг.',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/500px-Cristiano_Ronaldo_2018.jpg'
   },
   {
     id: 3,
@@ -33,7 +36,8 @@ const FAMOUS_PEOPLE_QUESTIONS: FamousPersonQuestion[] = [
     name: 'Albert Einstein',
     options: ['Isaac Newton', 'Nikola Tesla', 'Albert Einstein', 'Stephen Hawking'],
     hint1: 'Улс: Герман (Америк) | Мэргэшил: Онолын физикч',
-    hint2: 'Харьцангуйн ерөнхий онолыг нээж, шинжлэх ухааны түүхэнд хамгийн алдартай болох E=mc² томьёог боловсруулсан суут ухаантан.'
+    hint2: 'Харьцангуйн ерөнхий онолыг нээж, шинжлэх ухааны түүхэнд хамгийн алдартай болох E=mc² томьёог боловсруулсан суут ухаантан.',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/500px-Albert_Einstein_Head.jpg'
   },
   {
     id: 4,
@@ -41,7 +45,8 @@ const FAMOUS_PEOPLE_QUESTIONS: FamousPersonQuestion[] = [
     name: 'Elon Musk',
     options: ['Jeff Bezos', 'Mark Zuckerberg', 'Elon Musk', 'Bill Gates'],
     hint1: 'Улс: Өмнөд Африк (Америк) | Мэргэшил: Тэрбумтан, технологийн бизнесмэн',
-    hint2: 'SpaceX сансрын технологи, Tesla цахилгаан автомашины компани, мөн X (хуучнаар Twitter) платформыг эзэмшигч, Ангараг гарагийг колоничлох мөрөөдөлтэй эр.'
+    hint2: 'SpaceX сансрын технологи, Tesla цахилгаан автомашины компани, мөн X (хуучнаар Twitter) платформыг эзэмшигч, Ангараг гарагийг колоничлох мөрөөдөлтэй эр.',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/500px-Elon_Musk_Royal_Society_%28crop2%29.jpg'
   },
   {
     id: 5,
@@ -49,7 +54,8 @@ const FAMOUS_PEOPLE_QUESTIONS: FamousPersonQuestion[] = [
     name: 'Blitz (Гарьдмагнай)',
     options: ['910 (Сэнжиг)', 'Blitz (Гарьдмагнай)', 'Techno4K (Содбаяр)', 'mzinho (Аюуш)'],
     hint1: 'Улс: Монгол Улс | Мэргэшил: Мэргэжлийн CS2 кибер тамирчин',
-    hint2: 'Дэлхийд Монголын нэрийг тамгалж буй "The Mongolz" багийн ахлагч (IGL) бөгөөд ухаалаг тактик, гайхалтай удирдах чадвараараа танигдсан тоглогч.'
+    hint2: 'Дэлхийд Монголын нэрийг тамгалж буй "The Mongolz" багийн ахлагч (IGL) бөгөөд ухаалаг тактик, гайхалтай удирдах чадвараараа танигдсан тоглогч.',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/The_Mongolz_at_PGL_Major_Copenhagen_2024.jpg/500px-The_Mongolz_at_PGL_Major_Copenhagen_2024.jpg'
   },
   {
     id: 6,
@@ -57,7 +63,8 @@ const FAMOUS_PEOPLE_QUESTIONS: FamousPersonQuestion[] = [
     name: 'Michael Jackson',
     options: ['Elvis Presley', 'Freddie Mercury', 'Bruno Mars', 'Michael Jackson'],
     hint1: 'Улс: Америкийн Нэгдсэн Улс | Мэргэшил: Дуучин, бүжигчин, хөгжмийн зохиолч',
-    hint2: '"King of Pop" буюу Попын Хаан гэж өргөмжлөгддөг, түүний сарны алхаа (Moonwalk) бүжиг болон "Thriller" цомог нь дэлхийн түүхэнд мөнхрөн үлдсэн.'
+    hint2: '"King of Pop" буюу Попын Хаан гэж өргөмжлөгддөг, түүний сарны алхаа (Moonwalk) бүжиг болон "Thriller" цомог нь дэлхийн түүхэнд мөнхрөн үлдсэн.',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Michael_Jackson_in_1988.jpg/500px-Michael_Jackson_in_1988.jpg'
   },
   {
     id: 7,
@@ -65,7 +72,8 @@ const FAMOUS_PEOPLE_QUESTIONS: FamousPersonQuestion[] = [
     name: 'Steve Jobs',
     options: ['Bill Gates', 'Steve Jobs', 'Tim Cook', 'Andy Rubin'],
     hint1: 'Улс: Америкийн Нэгдсэн Улс | Мэргэшил: Зохион бүтээгч, технологийн анхдагч',
-    hint2: 'Apple компанийг үүсгэн байгуулагч бөгөөд ухаалаг гар утасны салбарыг орвонгоор нь өөрчилсөн анхны iPhone болон iPad төхөөрөмжүүдийг дэлхийд танилцуулсан хүн.'
+    hint2: 'Apple компанийг үүсгэн байгуулагч бөгөөд ухаалаг гар утасны салбарыг орвонгоор нь өөрчилсөн анхны iPhone болон iPad төхөөрөмжүүдийг дэлхийд танилцуулсан хүн.',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Steve_Jobs_Headshot_2010-CROP.jpg/500px-Steve_Jobs_Headshot_2010-CROP.jpg'
   },
   {
     id: 8,
@@ -73,7 +81,8 @@ const FAMOUS_PEOPLE_QUESTIONS: FamousPersonQuestion[] = [
     name: 'Lionel Messi',
     options: ['Lionel Messi', 'Cristiano Ronaldo', 'Diego Maradona', 'Pele'],
     hint1: 'Улс: Аргентин | Мэргэшил: Мэргэжлийн хөлбөмбөгчин',
-    hint2: 'Аргентины багийг ахлан 2022 онд Дэлхийн аварга болгосон, хөлбөмбөгийн түүхэн дэх хамгийн олон Алтан бөмбөгийг (Ballon d\'Or) хүртсэн дэлхийн домог.'
+    hint2: 'Аргентины багийг ахлан 2022 онд Дэлхийн аварга болгосон, хөлбөмбөгийн түүхэн дэх хамгийн олон Алтан бөмбөгийг (Ballon d\'Or) хүртсэн дэлхийн домог.',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_2018.jpg/500px-Lionel_Messi_2018.jpg'
   },
   {
     id: 9,
@@ -81,7 +90,8 @@ const FAMOUS_PEOPLE_QUESTIONS: FamousPersonQuestion[] = [
     name: 'LeBron James',
     options: ['Michael Jordan', 'Kobe Bryant', 'LeBron James', 'Stephen Curry'],
     hint1: 'Улс: Америкийн Нэгдсэн Улс | Мэргэшил: Мэргэжлийн сагсан бөмбөгчин',
-    hint2: 'NBA-ийн түүхэн дэх бүх цаг үеийн хамгийн олон оноо авсан амжилтыг эзэмшдэг, 4 удаагийн NBA аварга бөгөөд "King James" хэмээн дуудагддаг.'
+    hint2: 'NBA-ийн түүхэн дэх бүх цаг үеийн хамгийн олон оноо авсан амжилтыг эзэмшдэг, 4 удаагийн NBA аварга бөгөөд "King James" хэмээн дуудагддаг.',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/LeBron_James_crop_2018.jpg/500px-LeBron_James_crop_2018.jpg'
   },
   {
     id: 10,
@@ -89,7 +99,8 @@ const FAMOUS_PEOPLE_QUESTIONS: FamousPersonQuestion[] = [
     name: 'Taylor Swift',
     options: ['Billie Eilish', 'Taylor Swift', 'Ariana Grande', 'Selena Gomez'],
     hint1: 'Улс: Америкийн Нэгдсэн Улс | Мэргэшил: Дуучин, хөгжмийн зохиолч',
-    hint2: 'Оны шилдэг цомог номинацид хамгийн олон удаа Грэммийн шагнал авсан уран бүтээлч бөгөөд "Eras Tour" аялан тоглолт нь дэлхийн түүхэнд хамгийн өндөр орлоготойд тооцогддог.'
+    hint2: 'Оны шилдэг цомог номинацид хамгийн олон удаа Грэммийн шагнал авсан уран бүтээлч бөгөөд "Eras Tour" аялан тоглолт нь дэлхийн түүхэнд хамгийн өндөр орлоготойд тооцогддог.',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/191125_Taylor_Swift_at_the_2019_American_Music_Awards.png/500px-191125_Taylor_Swift_at_the_2019_American_Music_Awards.png'
   }
 ];
 
@@ -465,11 +476,21 @@ export default function FamousPeopleGuessGame({ onBack }: FamousPeopleGuessGameP
                   )}
                 </div>
 
-                <div className="text-xs text-zinc-300 leading-relaxed">
-                  <p className="font-semibold text-white mb-1">
-                    Зөв хариулт: {currentQuestion.name}
-                  </p>
-                  <p>{currentQuestion.hint2}</p>
+                <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start">
+                  {currentQuestion.imageUrl && (
+                    <img
+                      src={currentQuestion.imageUrl}
+                      alt={currentQuestion.name}
+                      className="w-24 h-24 sm:w-28 sm:h-28 object-cover rounded-xl border border-white/10 shadow-lg shrink-0 bg-white/5"
+                      referrerPolicy="no-referrer"
+                    />
+                  )}
+                  <div className="text-xs text-zinc-300 leading-relaxed flex-1 text-center sm:text-left">
+                    <p className="font-bold text-sm text-white mb-1">
+                      Зөв хариулт: {currentQuestion.name}
+                    </p>
+                    <p>{currentQuestion.hint2}</p>
+                  </div>
                 </div>
 
                 <button

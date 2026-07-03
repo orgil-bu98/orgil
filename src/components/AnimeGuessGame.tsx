@@ -7,6 +7,7 @@ interface AnimeQuestion {
   name: string;
   options: string[];
   defaultHint: string;
+  imageUrl?: string;
 }
 
 const ANIME_QUESTIONS: AnimeQuestion[] = [
@@ -15,105 +16,120 @@ const ANIME_QUESTIONS: AnimeQuestion[] = [
     emojis: '🥷🦊🍜',
     name: 'Naruto',
     options: ['Naruto', 'Demon Slayer', 'One Piece', 'Jujutsu Kaisen'],
-    defaultHint: 'Хамгийн дуртай хоол нь Рамэн. Түүний дотор есөн сүүлт үнэг бий.'
+    defaultHint: 'Хамгийн дуртай хоол нь Рамэн. Түүний дотор есөн сүүлт үнэг бий.',
+    imageUrl: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=500&h=500&q=80'
   },
   {
     id: 2,
     emojis: '🏴‍☠️👒🍖',
     name: 'One Piece',
     options: ['Naruto', 'Hunter x Hunter', 'One Piece', 'Dragon Ball Z'],
-    defaultHint: 'Сүрлэн малгайт ахмад далайн дээрэмчин болж хамгийн агуу эрдэнэсийг хайна.'
+    defaultHint: 'Сүрлэн малгайт ахмад далайн дээрэмчин болж хамгийн агуу эрдэнэсийг хайна.',
+    imageUrl: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&h=500&q=80'
   },
   {
     id: 3,
     emojis: '🧱👹🗡️',
     name: 'Attack on Titan',
     options: ['Sword Art Online', 'Attack on Titan', 'Fullmetal Alchemist', 'Tokyo Ghoul'],
-    defaultHint: 'Асар том ханануудын цаадах аварга биетүүд болон хүн төрөлхтний амьд үлдэх тэмцэл.'
+    defaultHint: 'Асар том ханануудын цаадах аварга биетүүд болон хүн төрөлхтний амьд үлдэх тэмцэл.',
+    imageUrl: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=500&h=500&q=80'
   },
   {
     id: 4,
     emojis: '📓🍎💀',
     name: 'Death Note',
     options: ['Your Name', 'Jujutsu Kaisen', 'My Hero Academia', 'Death Note'],
-    defaultHint: 'Тэнгэрийн элчийн санаандгүй унагаасан дэвтэр болон алим идэх дуртай шинигами Рюүк.'
+    defaultHint: 'Тэнгэрийн элчийн санаандгүй унагаасан дэвтэр болон алим идэх дуртай шинигами Рюүк.',
+    imageUrl: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=500&h=500&q=80'
   },
   {
     id: 5,
     emojis: '👹🗡️🌊',
     name: 'Demon Slayer',
     options: ['Demon Slayer', 'Naruto', 'Haikyuu!!', 'Tokyo Ghoul'],
-    defaultHint: 'Гол дүр нь дүүгээ аврахын тулд усан амьсгал ашиглан чөтгөрүүдтэй тэмцэнэ.'
+    defaultHint: 'Гол дүр нь дүүгээ аврахын тулд усан амьсгал ашиглан чөтгөрүүдтэй тэмцэнэ.',
+    imageUrl: 'https://images.unsplash.com/photo-1580234810907-b40315b76418?auto=format&fit=crop&w=500&h=500&q=80'
   },
   {
     id: 6,
     emojis: '🏐🧡👑',
     name: 'Haikyuu!!',
     options: ['Kuroko no Basket', 'Haikyuu!!', 'Slam Dunk', 'Blue Lock'],
-    defaultHint: 'Гар бөмбөгийн спорт, жижигхэн аварга Хината болон талбайн хаан Кагэяма.'
+    defaultHint: 'Гар бөмбөгийн спорт, жижигхэн аварга Хината болон талбайн хаан Кагэяма.',
+    imageUrl: 'https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&w=500&h=500&q=80'
   },
   {
     id: 7,
     emojis: '👁️🤞👹',
     name: 'Jujutsu Kaisen',
     options: ['Demon Slayer', 'Tokyo Ghoul', 'Jujutsu Kaisen', 'Hunter x Hunter'],
-    defaultHint: 'Хамгийн хүчтэй хараалын хаан Сукуна болон нүдний боолттой Гүжо Сэнсэй.'
+    defaultHint: 'Хамгийн хүчтэй хараалын хаан Сукуна болон нүдний боолттой Гүжо Сэнсэй.',
+    imageUrl: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=500&h=500&q=80'
   },
   {
     id: 8,
     emojis: '🦸‍♂️⚡🏫',
     name: 'My Hero Academia',
     options: ['My Hero Academia', 'One Piece', 'Sword Art Online', 'Dragon Ball Z'],
-    defaultHint: 'Ямар ч хүч чадалгүй төрсөн Деку хүү шилдэг баатар болохын тулд баатруудын сургуульд суралцана.'
+    defaultHint: 'Ямар ч хүч чадалгүй төрсөн Деку хүү шилдэг баатар болохын тулд баатруудын сургуульд суралцана.',
+    imageUrl: 'https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?auto=format&fit=crop&w=500&h=500&q=80'
   },
   {
     id: 9,
     emojis: '🐉☄️🟠',
     name: 'Dragon Ball Z',
     options: ['Fullmetal Alchemist', 'Naruto', 'Dragon Ball Z', 'Your Name'],
-    defaultHint: 'Сон Гоку болон түүний найзуудын адал явдал, долоон ширхэг шидэт бөмбөлөг.'
+    defaultHint: 'Сон Гоку болон түүний найзуудын адал явдал, долоон ширхэг шидэт бөмбөлөг.',
+    imageUrl: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=500&h=500&q=80'
   },
   {
     id: 10,
     emojis: '🎣🎒🕶️',
     name: 'Hunter x Hunter',
     options: ['Hunter x Hunter', 'One Piece', 'Jujutsu Kaisen', 'Haikyuu!!'],
-    defaultHint: 'Гон аавыгаа хайж олохын тулд Хантерийн шалгалтанд орж, Килуа хүүтэй нөхөрлөно.'
+    defaultHint: 'Гон аавыгаа хайж олохын тулд Хантерийн шалгалтанд орж, Килуа хүүтэй нөхөрлөно.',
+    imageUrl: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=500&h=500&q=80'
   },
   {
     id: 11,
     emojis: '☕🎭🩸',
     name: 'Tokyo Ghoul',
     options: ['Death Note', 'Tokyo Ghoul', 'One Piece', 'Hunter x Hunter'],
-    defaultHint: 'Хагас хүн хагас гүүл болсон Канеки Кэн болон кофе уух дуртай нууцлаг амьтад.'
+    defaultHint: 'Хагас хүн хагас гүүл болсон Канеки Кэн болон кофе уух дуртай нууцлаг амьтад.',
+    imageUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=500&h=500&q=80'
   },
   {
     id: 12,
     emojis: '⚔️🥽🏰',
     name: 'Sword Art Online',
     options: ['Sword Art Online', 'Attack on Titan', 'Fullmetal Alchemist', 'My Hero Academia'],
-    defaultHint: 'Виртуал тоглоомонд бүрмөсөн түгжигдсэн тоглогчид болон хар хувцаст сэлэмчин Кирито.'
+    defaultHint: 'Виртуал тоглоомонд бүрмөсөн түгжигдсэн тоглогчид болон хар хувцаст сэлэмчин Кирито.',
+    imageUrl: 'https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=500&h=500&q=80'
   },
   {
     id: 13,
     emojis: '🦾🪙⚡',
     name: 'Fullmetal Alchemist',
     options: ['Naruto', 'Jujutsu Kaisen', 'Fullmetal Alchemist', 'Dragon Ball Z'],
-    defaultHint: 'Алдагдсан бие махбодоо буцаан авах гэсэн Элрик ах дүүсийн алхимын хүнд бэрх аялал.'
+    defaultHint: 'Алдагдсан бие махбодоо буцаан авах гэсэн Элрик ах дүүсийн алхимын хүнд бэрх аялал.',
+    imageUrl: 'https://images.unsplash.com/photo-1613376023733-0a73315d9b06?auto=format&fit=crop&w=500&h=500&q=80'
   },
   {
     id: 14,
     emojis: '🌠☄️⏳',
     name: 'Your Name',
     options: ['Spirited Away', 'Your Name', 'Tokyo Ghoul', 'My Neighbor Totoro'],
-    defaultHint: 'Сүүлт од унах шөнө бие биеийнхээ биед шилжсэн Мицуха охин болон Таки хүүгийн хайр.'
+    defaultHint: 'Сүүлт од унах шөнө бие биеийнхээ биед шилжсэн Мицуха охин болон Таки хүүгийн хайр.',
+    imageUrl: 'https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?auto=format&fit=crop&w=500&h=500&q=80'
   },
   {
     id: 15,
     emojis: '🏮🐷🐉',
     name: 'Spirited Away',
     options: ['Your Name', 'Spirited Away', 'Tokyo Ghoul', 'My Neighbor Totoro'],
-    defaultHint: 'Сүнсний хачирхалтай хотод ороод гахай болон хувирсан аав ээж, тэдэнд туслах Хаку луу.'
+    defaultHint: 'Сүнсний хачирхалтай хотод ороод гахай болон хувирсан аав ээж, тэдэнд туслах Хаку луу.',
+    imageUrl: 'https://images.unsplash.com/photo-1505993597083-3bd19fb75e57?auto=format&fit=crop&w=500&h=500&q=80'
   }
 ];
 
@@ -426,11 +442,21 @@ export default function AnimeGuessGame({ onBack }: AnimeGuessGameProps) {
                   )}
                 </div>
 
-                <div className="text-xs text-zinc-300 leading-relaxed">
-                  <p className="font-semibold text-white mb-1">
-                    Зөв хариулт: {currentQuestion.name}
-                  </p>
-                  <p>{currentQuestion.defaultHint}</p>
+                <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start">
+                  {currentQuestion.imageUrl && (
+                    <img
+                      src={currentQuestion.imageUrl}
+                      alt={currentQuestion.name}
+                      className="w-24 h-24 sm:w-28 sm:h-28 object-cover rounded-xl border border-white/10 shadow-lg shrink-0 bg-white/5"
+                      referrerPolicy="no-referrer"
+                    />
+                  )}
+                  <div className="text-xs text-zinc-300 leading-relaxed flex-1 text-center sm:text-left">
+                    <p className="font-bold text-sm text-white mb-1">
+                      Зөв хариулт: {currentQuestion.name}
+                    </p>
+                    <p>{currentQuestion.defaultHint}</p>
+                  </div>
                 </div>
 
                 <button
