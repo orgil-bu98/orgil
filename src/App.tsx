@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Menu, X, ArrowRight, Compass, Sparkles, Map, Database, ArrowUpRight, Layers, Volume2, VolumeX, Play, Pause, Music, Phone, Mail, Instagram, Facebook, Bot } from 'lucide-react';
+import { Menu, X, ArrowRight, Compass, Sparkles, Map, Database, ArrowUpRight, Layers, Volume2, VolumeX, Play, Pause, Music, Phone, Mail, Instagram, Facebook, Bot, Keyboard } from 'lucide-react';
 import MeAIChatPopup from './components/MeAIChatPopup';
 import IdolCoachChat from './components/IdolCoachChat';
 import AnimeGuessGame from './components/AnimeGuessGame';
@@ -176,7 +176,7 @@ export default function App() {
       {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between p-4 sm:p-5">
         {/* Brand Logo (Replacing logo and text with the uploaded symbol image) */}
-        <div className="z-[110] flex items-center">
+        <div className="z-[110] flex items-center gap-3">
           <svg 
             viewBox="0 0 512 512" 
             className="w-[42px] h-[42px] text-white hover:opacity-95 transition-opacity cursor-pointer select-none active:scale-95 duration-200" 
@@ -204,6 +204,27 @@ export default function App() {
             <circle cx="242" cy="242" r="14" fill="black" />
             <circle cx="236" cy="236" r="5" fill="white" />
           </svg>
+
+          {/* Shark Typer Game External Redirect Logo */}
+          <a 
+            href="https://typer-red-nu.vercel.app/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-orange-500/15 hover:bg-orange-500/25 border border-orange-500/30 hover:border-orange-500/50 rounded-xl px-2.5 py-1.5 transition-all duration-300 active:scale-95 group"
+            title="Shark Typer тоглоом руу шилжих"
+            id="shark_typer_nav_logo"
+          >
+            <img 
+              src="/src/assets/images/shark_typer_logo_1783304665294.jpg" 
+              alt="Shark Typer Logo" 
+              className="w-7 h-7 rounded-lg object-cover border border-white/20 shadow-md group-hover:scale-105 transition-transform"
+              referrerPolicy="no-referrer"
+            />
+            <div className="hidden sm:flex flex-col items-start leading-none">
+              <span className="text-[10px] font-bold font-mono text-orange-400 uppercase tracking-wider">SHARK TYPER</span>
+              <span className="text-[8px] font-mono text-zinc-400 mt-0.5">VERCEL GAME ↗</span>
+            </div>
+          </a>
         </div>
 
         {/* Center Pill Menu (Desktop only) */}
@@ -405,14 +426,27 @@ export default function App() {
                 </span>
               </h1>
               
-              <button 
-                onClick={() => setActiveTab('Бидний тухай')}
-                className="pointer-events-auto group mt-6 flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 transition-all duration-300 hover:scale-105 active:scale-95"
-              >
-                <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
-                <span className="text-xs font-semibold text-white tracking-wider uppercase font-mono">Бидний тухай видео</span>
-                <ArrowRight size={14} className="text-white group-hover:translate-x-0.5 transition-transform" />
-              </button>
+              <div className="pointer-events-auto flex flex-col sm:flex-row gap-3 mt-6">
+                <button 
+                  onClick={() => setActiveTab('Бидний тухай')}
+                  className="group flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 transition-all duration-300 hover:scale-105 active:scale-95"
+                >
+                  <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
+                  <span className="text-xs font-semibold text-white tracking-wider uppercase font-mono">Бидний тухай видео</span>
+                  <ArrowRight size={14} className="text-white group-hover:translate-x-0.5 transition-transform" />
+                </button>
+
+                <a 
+                  href="https://typer-red-nu.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-orange-500 hover:bg-orange-600 transition-all duration-300 hover:scale-105 active:scale-95 text-white shadow-lg shadow-orange-500/10"
+                >
+                  <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+                  <span className="text-xs font-semibold tracking-wider uppercase font-mono">Шивэх хурд сорих</span>
+                  <ArrowRight size={14} className="text-white group-hover:translate-x-0.5 transition-transform" />
+                </a>
+              </div>
             </div>
 
             {/* Interactive Indicator (Floating element that encourages interaction) */}
@@ -542,6 +576,36 @@ export default function App() {
                 >
                   <Instagram size={18} className="text-white group-hover:text-orange-500 transition-colors duration-300" />
                   <span className="text-[11px] text-white/80 group-hover:text-white transition-colors duration-300 font-mono">orgil9_</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Middle-Right Typer Showcase Block */}
+            <div 
+              className="absolute top-[56%] sm:top-[62%] right-5 sm:right-10 md:right-14 -translate-y-1/2 z-50 flex flex-col items-end gap-2 hero-anim hero-fade bg-black/40 backdrop-blur-md p-4 rounded-2xl border border-white/10 w-[180px] sm:w-[200px]"
+              style={{ animationDelay: '0.7s' }}
+            >
+              <span className="text-[9px] font-mono text-white/40 uppercase tracking-widest text-right w-full">ARCADE ARENA</span>
+              <div className="flex flex-col gap-2.5 w-full">
+                {/* Shark Typer Vercel Link with Image */}
+                <a 
+                  href="https://typer-red-nu.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col items-start gap-1 p-3 rounded-xl bg-orange-500/10 hover:bg-orange-500/20 border border-orange-500/20 hover:border-orange-500/40 transition-all duration-300 hover:scale-105 active:scale-95 w-full text-left animate-pulse"
+                  title="Shark Typer Vercel тоглоом тоглох"
+                  id="shark_typer_showcase_link"
+                >
+                  <div className="flex items-center gap-1.5 text-orange-400">
+                    <img 
+                      src="/src/assets/images/shark_typer_logo_1783304665294.jpg" 
+                      alt="Shark Typer Logo" 
+                      className="w-5 h-5 rounded object-cover border border-orange-500/30"
+                      referrerPolicy="no-referrer"
+                    />
+                    <span className="text-[11px] font-bold font-mono tracking-wider uppercase">SHARK TYPER</span>
+                  </div>
+                  <span className="text-[9px] text-zinc-400 font-mono mt-0.5 leading-tight">Аварга загаснаас зугтаж хурдан шивээрэй ↗</span>
                 </a>
               </div>
             </div>
