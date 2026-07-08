@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Send, Trash2, ArrowLeft, Bot, Sparkles, User, Dumbbell, Trophy } from 'lucide-react';
 import { ChatMessage } from '../types';
+import coachData from '../data.json';
 
 interface IdolCoachChatProps {
   onBack: () => void;
@@ -23,7 +24,7 @@ export default function IdolCoachChat({ onBack }: IdolCoachChatProps) {
         {
           id: 'welcome_yuji',
           role: 'assistant',
-          content: 'Сайн уу, Оргил! 🇯🇵🏐 Би байна, Южи Нишида байна. Чиний сургуулийн бэлтгэл, волейболын техник, довтолгоо эсвэл амжилтын талаар асуух зүйл байна уу? Би чамд туслахад үргэлж бэлэн байна! Хамтдаа хичээцгээе! 💪🔥',
+          content: coachData.idolCoach.welcomeMessage,
           timestamp: new Date().toISOString()
         }
       ]);
@@ -111,7 +112,7 @@ export default function IdolCoachChat({ onBack }: IdolCoachChatProps) {
         {
           id: 'welcome_yuji',
           role: 'assistant',
-          content: 'Сайн уу, Оргил! 🇯🇵🏐 Би байна, Южи Нишида байна. Чиний сургуулийн бэлтгэл, волейболын техник, довтолгоо эсвэл амжилтын талаар асуух зүйл байна уу? Би чамд туслахад үргэлж бэлэн байна! Хамтдаа хичээцгээе! 💪🔥',
+          content: coachData.idolCoach.welcomeMessage,
           timestamp: new Date().toISOString()
         }
       ]);
@@ -140,11 +141,11 @@ export default function IdolCoachChat({ onBack }: IdolCoachChatProps) {
           <div className="relative group rounded-2xl overflow-hidden bg-white/5 border border-white/10 p-4 flex flex-col gap-3">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-full overflow-hidden bg-zinc-800 border-2 border-orange-500 flex items-center justify-center shrink-0">
-                <span className="text-lg font-black text-white">YN</span>
+                <span className="text-lg font-black text-white">{coachData.idolCoach.avatarInitials}</span>
               </div>
               <div>
-                <h3 className="text-sm font-bold tracking-wide text-white uppercase">Yuji Nishida</h3>
-                <span className="text-[10px] text-zinc-400 font-mono">Opposite Spiker</span>
+                <h3 className="text-sm font-bold tracking-wide text-white uppercase">{coachData.idolCoach.name}</h3>
+                <span className="text-[10px] text-zinc-400 font-mono">{coachData.idolCoach.role}</span>
               </div>
             </div>
             
@@ -153,21 +154,21 @@ export default function IdolCoachChat({ onBack }: IdolCoachChatProps) {
             <div className="flex flex-col gap-1.5 text-xs">
               <div className="flex justify-between">
                 <span className="text-zinc-500">Шигшээ баг:</span>
-                <span className="text-zinc-300 font-medium">Japan 🇯🇵</span>
+                <span className="text-zinc-300 font-medium">{coachData.idolCoach.team}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-zinc-500">Өндөр:</span>
-                <span className="text-zinc-300 font-medium">1.86 м</span>
+                <span className="text-zinc-300 font-medium">{coachData.idolCoach.height}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-zinc-500">Төрсөн өдөр:</span>
-                <span className="text-zinc-300 font-medium">2000.01.30</span>
+                <span className="text-zinc-300 font-medium">{coachData.idolCoach.birthday}</span>
               </div>
             </div>
           </div>
 
           <p className="text-xs text-zinc-400 leading-relaxed">
-            Японы шигшээ багийн шилдэг довтлогч, волейболын од Южи Нишидагаас мэргэжлийн бэлтгэл сургуулилт, зөвлөгөөг аваарай.
+            {coachData.idolCoach.description}
           </p>
         </div>
 
@@ -191,7 +192,7 @@ export default function IdolCoachChat({ onBack }: IdolCoachChatProps) {
             </div>
             <div>
               <div className="flex items-center gap-1.5">
-                <h3 className="text-sm font-semibold uppercase font-mono tracking-wider">Yuji Nishida AI Coach</h3>
+                <h3 className="text-sm font-semibold uppercase font-mono tracking-wider">{coachData.idolCoach.name} AI Coach</h3>
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
               </div>
               <p className="text-[10px] text-zinc-400 font-mono mt-0.5 uppercase tracking-wide">GEMINI-3.5-FLASH POWERED</p>
@@ -216,7 +217,7 @@ export default function IdolCoachChat({ onBack }: IdolCoachChatProps) {
                 <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 border ${
                   isUser ? 'bg-orange-500/10 border-orange-500/30 text-orange-400' : 'bg-white/5 border-white/10 text-zinc-300'
                 }`}>
-                  {isUser ? <User size={14} /> : <span className="text-xs font-bold">YN</span>}
+                  {isUser ? <User size={14} /> : <span className="text-xs font-bold">{coachData.idolCoach.avatarInitials}</span>}
                 </div>
                 
                 <div className={`p-4 rounded-2xl text-xs sm:text-sm leading-relaxed ${
@@ -250,11 +251,7 @@ export default function IdolCoachChat({ onBack }: IdolCoachChatProps) {
           <div className="px-6 py-2 flex flex-col gap-1.5 bg-black/20">
             <span className="text-[10px] font-mono text-white/30 uppercase tracking-widest">Асуух жишээ асуултууд:</span>
             <div className="flex flex-col sm:flex-row gap-2">
-              {[
-                'Чи хэрхэн волейболын шилдэг довтлогч болсон бэ?',
-                'Өндөр маань 1.86м байхад өндөр хамгаалагчдын дээгүүр яаж довтлох вэ?',
-                'Бэлтгэлийн үед шантрах үедээ сэтгэл зүйгээ хэрхэн бэлддэг вэ?'
-              ].map((prompt, i) => (
+              {coachData.idolCoach.suggestedPrompts.map((prompt, i) => (
                 <button
                   key={i}
                   onClick={() => handleSendMessage(prompt)}

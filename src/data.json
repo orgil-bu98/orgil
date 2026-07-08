@@ -1,0 +1,232 @@
+{
+  "idolCoach": {
+    "name": "Yuji Nishida",
+    "avatarInitials": "YN",
+    "role": "Opposite Spiker",
+    "team": "Japan 🇯🇵",
+    "height": "1.86 м",
+    "birthday": "2000.01.30",
+    "description": "Японы шигшээ багийн шилдэг довтлогч, волейболын од Южи Нишидагаас мэргэжлийн бэлтгэл сургуулилт, зөвлөгөөг аваарай.",
+    "welcomeMessage": "Сайн уу, Оргил! 🇯🇵🏐 Би байна, Южи Нишида байна. Чиний сургуулийн бэлтгэл, волейболын техник, довтолгоо эсвэл амжилтын талаар асуух зүйл байна уу? Би чамд туслахад үргэлж бэлэн байна! Хамтдаа хичээцгээе! 💪🔥",
+    "suggestedPrompts": [
+      "Чи хэрхэн волейболын шилдэг довтлогч болсон бэ?",
+      "Өндөр маань 1.86м байхад өндөр хамгаалагчдын дээгүүр яаж довтлох вэ?",
+      "Бэлтгэлийн үед шантрах үедээ сэтгэл зүйгээ хэрхэн бэлддэг вэ?"
+    ],
+    "systemInstruction": "Чи бол Yuji Nishida (Южи Нишида) - Японы шигшээ багийн алдартай волейболчин юм.\nӨөрийн мэдээлэл:\n- Өндөр: 1.86м\n- Одоогийн баг: Японы шигшээ баг (Japan)\n- Төрсөн өдөр: 2000 оны 1 сарын 30\n- Хэрэглэгчтэй харилцахдаа Оргил (namaig orgil gedeg) гэж дуудна.\n- Оргилын асуусан зүйлсийг үнэн зөвөөр, өөрийн мэдэх хэмжээнд хариулна.\n\nЗАН ЧАНАР:\n- соёлтой\n- тусч\n\nЯРИХ ХЭВ МАЯГ:\n- соёлтой, эелдэг ярина. Монголоор хариулна.\n\nҮҮРЭГ:\n- Надад зөвлөгөө, дэмжлэг, урам зориг өг.\n- Өөрийн туршлага, амьдралын жишээн дээр тулгуурла.\n- Үргэлж Yuji Nishida-ийн өнцгөөс хариул.\n\n🛡️ АЮУЛГҮЙ БАЙДЛЫН ДҮРЭМ (заавал, бүү устга):\n- Эрүүл мэнд, аюул, гэр бүл, сэтгэл санааны хүнд асуудлаар жинхэнэ мэргэжлийн зөвлөгөө бүү өг. Оронд нь \"Энэ чухал асуудал — итгэдэг том хүн (эцэг эх, багш)-тайгаа ярь\" гэж зөвлө.\n- Хор хөнөөлтэй, аюултай, насанд тохироогүй зүйл хэзээ ч бүү заа.\n- Хэрэглэгчийн хувийн мэдээллийг (нэр, хаяг, утас) бүү асуу.\n\nХЯЗГААР:\n- Хөгжилтэй дасгалын хувьд Yuji Nishida-ийн дүрд тоглож ярина, \"Би AI\" гэж бүү хэл.\n- Гэхдээ дээрх аюулгүй байдлын дүрэм ҮРГЭЛЖ дүрээс илүү чухал.\n- Найрсаг, эерэг байх."
+  },
+  "animeQuestions": [
+    {
+      "id": 1,
+      "emojis": "🥷🦊🍜",
+      "name": "Naruto",
+      "options": ["Naruto", "Demon Slayer", "One Piece", "Jujutsu Kaisen"],
+      "defaultHint": "Хамгийн дуртай хоол нь Рамэн. Түүний дотор есөн сүүлт үнэг бий.",
+      "imageUrl": "https://easydrawingguides.com/wp-content/uploads/2017/05/how-to-draw-naruto-featured-image-1200.png"
+    },
+    {
+      "id": 2,
+      "emojis": "🏴‍☠️👒🍖",
+      "name": "One Piece",
+      "options": ["Naruto", "Hunter x Hunter", "One Piece", "Dragon Ball Z"],
+      "defaultHint": "Сүрлэн малгайт ахмад далайн дээрэмчин болж хамгийн агуу эрдэнэсийг хайна.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw_yzXcaWeBZN5ELbOsgpvEvkvaJ6l_x6XxW2Xi4TXXg&s=10"
+    },
+    {
+      "id": 3,
+      "emojis": "🧱👹🗡️",
+      "name": "Attack on Titan",
+      "options": ["Sword Art Online", "Attack on Titan", "Fullmetal Alchemist", "Tokyo Ghoul"],
+      "defaultHint": "Асар том ханануудын цаадах аварга биетүүд болон хүн төрөлхтний амьд үлдэх тэмцэл.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQigobSp1b1DRmp6xeC4hcycUCRnUXcP3XQTxdkHxd14w&s=10"
+    },
+    {
+      "id": 4,
+      "emojis": "📓🍎💀",
+      "name": "Death Note",
+      "options": ["Your Name", "Jujutsu Kaisen", "My Hero Academia", "Death Note"],
+      "defaultHint": "Тэнгэрийн элчийн санаандгүй унагаасан дэвтэр болон алим идэх дуртай шинигами Рюүк.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE-s9JscbcqNhv5TVEvqhf3-mJDkX7FZ3YJTgMSjT-pg&s"
+    },
+    {
+      "id": 5,
+      "emojis": "👹🗡️🌊",
+      "name": "Demon Slayer",
+      "options": ["Demon Slayer", "Naruto", "Haikyuu!!", "Tokyo Ghoul"],
+      "defaultHint": "Гол дүр нь дүүгээ аврахын тулд усан амьсгал ашиглан чөтгөрүүдтэй тэмцэнэ.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0fMxjRck-hY6tdV_nW-SnIWjFEvO3SGjYc77oCHjPUg&s=10"
+    },
+    {
+      "id": 6,
+      "emojis": "🏐🧡👑",
+      "name": "Haikyuu!!",
+      "options": ["Kuroko no Basket", "Haikyuu!!", "Slam Dunk", "Blue Lock"],
+      "defaultHint": "Гар бөмбөгийн спорт, жижигхэн аварга Хината болон талбайн хаан Кагэяма.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeXNByK6Xofxh5OJIIJIVssu8LnQWp8HWOI9hDMsoO1YUVeDsVo2NgK-c&s=10"
+    },
+    {
+      "id": 7,
+      "emojis": "👁️🤞👹",
+      "name": "Jujutsu Kaisen",
+      "options": ["Demon Slayer", "Tokyo Ghoul", "Jujutsu Kaisen", "Hunter x Hunter"],
+      "defaultHint": "Хамгийн хүчтэй хараалын хаан Сукуна болон нүдний боолттой Гүжо Сэнсэй.",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjBlNTExMDAtMWZjZi00MDc5LWFkMjgtZDU0ZWQ5ODk3YWY5XkEyXkFqcGc@._V1_.jpghttps://m.media-amazon.com/images/M/MV5BMjBlNTExMDAtMWZjZi00MDc5LWFkMjgtZDU0ZWQ5ODk3YWY5XkEyXkFqcGc@._V1_.jpg"
+    },
+    {
+      "id": 8,
+      "emojis": "🦸‍♂️⚡🏫",
+      "name": "My Hero Academia",
+      "options": ["My Hero Academia", "One Piece", "Sword Art Online", "Dragon Ball Z"],
+      "defaultHint": "Ямар ч хүч чадалгүй төрсөн Деку хүү шилдэг баатар болохын тулд баатруудын сургуульд суралцана.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ5m7Cz3MqjUYlYZAH2r2pw1M0wLlZAIZaSw_XsUDAjQ&s=10"
+    },
+    {
+      "id": 9,
+      "emojis": "🐉☄️🟠",
+      "name": "Dragon Ball Z",
+      "options": ["Fullmetal Alchemist", "Naruto", "Dragon Ball Z", "Your Name"],
+      "defaultHint": "Сон Гоку болон түүний найзуудын адал явдал, долоон ширхэг шидэт бөмбөлөг.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPOw2RvQ2PL8hInBAMTx3eK3imEGUefhgkxOJjfvHRCw&s=10"
+    },
+    {
+      "id": 10,
+      "emojis": "🎣🎒🕶️",
+      "name": "Hunter x Hunter",
+      "options": ["Hunter x Hunter", "One Piece", "Jujutsu Kaisen", "Haikyuu!!"],
+      "defaultHint": "Гон аавыгаа хайж олохын тулд Хантерийн шалгалтанд орж, Килуа хүүтэй нөхөрлөно.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e0/Gon_Freecss.png"
+    },
+    {
+      "id": 11,
+      "emojis": "☕🎭🩸",
+      "name": "Tokyo Ghoul",
+      "options": ["Death Note", "Tokyo Ghoul", "One Piece", "Hunter x Hunter"],
+      "defaultHint": "Хагас хүн хагас гүүл болсон Канеки Кэн болон кофе уух дуртай нууцлаг амьтад.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e5/Ken_Kaneki.png"
+    },
+    {
+      "id": 12,
+      "emojis": "⚔️🥽🏰",
+      "name": "Sword Art Online",
+      "options": ["Sword Art Online", "Attack on Titan", "Fullmetal Alchemist", "My Hero Academia"],
+      "defaultHint": "Виртуал тоглоомонд бүрмөсөн түгжигдсэн тоглогчид болон хар хувцаст сэлэмчин Кирито.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a7/Kirito_SAO.png"
+    },
+    {
+      "id": 13,
+      "emojis": "🦾🪙⚡",
+      "name": "Fullmetal Alchemist",
+      "options": ["Naruto", "Jujutsu Kaisen", "Fullmetal Alchemist", "Dragon Ball Z"],
+      "defaultHint": "Алдагдсан бие махбодоо буцаан авах гэсэн Элрик ах дүүсийн алхимын хүнд бэрх аялал.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/d/dc/Edward_Elric.png"
+    },
+    {
+      "id": 14,
+      "emojis": "🌠☄️⏳",
+      "name": "Your Name",
+      "options": ["Spirited Away", "Your Name", "Tokyo Ghoul", "My Neighbor Totoro"],
+      "defaultHint": "Сүүлт од унах шөнө бие биеийнхээ биед шилжсэн Мицуха охин болон Таки хүүгийн хайр.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/4/4b/Your_Name_poster.png"
+    },
+    {
+      "id": 15,
+      "emojis": "🏮🐷🐉",
+      "name": "Spirited Away",
+      "options": ["Your Name", "Spirited Away", "Tokyo Ghoul", "My Neighbor Totoro"],
+      "defaultHint": "Сүнсний хачирхалтай хотод ороод гахай болон хувирсан аав ээж, тэдэнд туслах Хаку луу.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_poster.png"
+    }
+  ],
+  "famousPeopleQuestions": [
+    {
+      "id": 1,
+      "emojis": "🇲🇳🐎🏹👑",
+      "name": "Чингис Хаан",
+      "options": ["Жамуха", "Өгөдэй Хаан", "Чингис Хаан", "Хубилай Хаан"],
+      "hint1": "Улс: Монгол Улс | Мэргэшил: Их Хаан, цэргийн гарамгай жанжин",
+      "hint2": "13-р зуунд тархай бутархай Монгол аймгуудыг нэгтгэж, хүн төрөлхтний түүхэн дэх хамгийн том хуурай газрын эзэнт гүрнийг байгуулсан суут хүн.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/YuanEmpPortraitGenghisKhann.jpg/500px-YuanEmpPortraitGenghisKhann.jpg"
+    },
+    {
+      "id": 2,
+      "emojis": "⚽🇵🇹7️⃣🏆",
+      "name": "Cristiano Ronaldo",
+      "options": ["Lionel Messi", "Cristiano Ronaldo", "Neymar Jr", "Kylian Mbappe"],
+      "hint1": "Улс: Португал | Мэргэшил: Мэргэжлийн хөлбөмбөгчин",
+      "hint2": "Дэлхийн 5 удаагийн шилдэг хөлбөмбөгчин (Алтан бөмбөг), \"CR7\" нэрээрээ дэлхийд алдартай бөгөөд асар олон гоолын дээд амжилтыг эзэмшдэг.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/500px-Cristiano_Ronaldo_2018.jpg"
+    },
+    {
+      "id": 3,
+      "emojis": "🧠🇩🇪⚛️🌌",
+      "name": "Albert Einstein",
+      "options": ["Isaac Newton", "Nikola Tesla", "Albert Einstein", "Stephen Hawking"],
+      "hint1": "Улс: Герман (Америк) | Мэргэшил: Онолын физикч",
+      "hint2": "Харьцангуйн ерөнхий онолыг нээж, шинжлэх ухааны түүхэнд хамгийн алдартай болох E=mc² томьёог боловсруулсан суут ухаантан.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/500px-Albert_Einstein_Head.jpg"
+    },
+    {
+      "id": 4,
+      "emojis": "🚀🚘🌌🪙",
+      "name": "Elon Musk",
+      "options": ["Jeff Bezos", "Mark Zuckerberg", "Elon Musk", "Bill Gates"],
+      "hint1": "Улс: Өмнөд Африк (Америк) | Мэргэшил: Тэрбумтан, технологийн бизнесмэн",
+      "hint2": "SpaceX сансрын технологи, Tesla цахилгаан автомашины компани, мөн X (хуучнаар Twitter) платформыг эзэмшигч, Ангараг гарагийг колоничлох мөрөөдөлтэй эр.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/500px-Elon_Musk_Royal_Society_%28crop2%29.jpg"
+    },
+    {
+      "id": 5,
+      "emojis": "🎮🇲🇳🎯🏆",
+      "name": "Blitz (Гарьдмагнай)",
+      "options": ["910 (Сэнжиг)", "Blitz (Гарьдмагнай)", "Techno4K (Содбаяр)", "mzinho (Аюуш)"],
+      "hint1": "Улс: Монгол Улс | Мэргэшил: Мэргэжлийн CS2 кибер тамирчин",
+      "hint2": "Дэлхийд Монголын нэрийг тамгалж буй \"The Mongolz\" багийн ахлагч (IGL) бөгөөд ухаалаг тактик, гайхалтай удирдах чадвараараа танигдсан тоглогч.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCV-ZW4mBzghhLkfaSucvmTFxFgsOYgEvtZ1bmaQ6JZg&s"
+    },
+    {
+      "id": 6,
+      "emojis": "🎤🕺🎩👞",
+      "name": "Michael Jackson",
+      "options": ["Elvis Presley", "Freddie Mercury", "Bruno Mars", "Michael Jackson"],
+      "hint1": "Улс: Америкийн Нэгдсэн Улс | Мэргэшил: Дуучин, бүжигчин, хөгжмийн зохиолч",
+      "hint2": "\"King of Pop\" буюу Попын Хаан гэж өргөмжлөгддөг, түүний сарны алхаа (Moonwalk) бүжиг болон \"Thriller\" цомог нь дэлхийн түүхэнд мөнхрөн үлдсэн.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Michael_Jackson_in_1988.jpg/500px-Michael_Jackson_in_1988.jpg"
+    },
+    {
+      "id": 7,
+      "emojis": "🍎📱👓💻",
+      "name": "Steve Jobs",
+      "options": ["Bill Gates", "Steve Jobs", "Tim Cook", "Andy Rubin"],
+      "hint1": "Улс: Америкийн Нэгдсэн Улс | Мэргэшил: Зохион бүтээгч, технологийн анхдагч",
+      "hint2": "Apple компанийг үүсгэн байгуулагч бөгөөд ухаалаг гар утасны салбарыг орвонгоор нь өөрчилсөн анхны iPhone болон iPad төхөөрөмжүүдийг дэлхийд танилцуулсан хүн.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Steve_Jobs_Headshot_2010-CROP.jpg/500px-Steve_Jobs_Headshot_2010-CROP.jpg"
+    },
+    {
+      "id": 8,
+      "emojis": "⚽🇦🇷🐐🔟",
+      "name": "Lionel Messi",
+      "options": ["Lionel Messi", "Cristiano Ronaldo", "Diego Maradona", "Pele"],
+      "hint1": "Улс: Аргентин | Мэргэшил: Мэргэжлийн хөлбөмбөгчин",
+      "hint2": "Аргентины багийг ахлан 2022 онд Дэлхийн аварга болгосон, хөлбөмбөгийн түүхэн дэх хамгийн олон Алтан бөмбөгийг (Ballon d'Or) хүртсэн дэлхийн домог.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_2018.jpg/500px-Lionel_Messi_2018.jpg"
+    },
+    {
+      "id": 9,
+      "emojis": "🏀👑👑🇺🇸",
+      "name": "LeBron James",
+      "options": ["Michael Jordan", "Kobe Bryant", "LeBron James", "Stephen Curry"],
+      "hint1": "Улс: Америкийн Нэгдсэн Улс | Мэргэшил: Мэргэжлийн сагсан бөмбөгчин",
+      "hint2": "NBA-ийн түүхэн дэх бүх цаг үеийн хамгийн олон оноо авсан амжилтыг эзэмшдэг, 4 удаагийн NBA аварга бөгөөд \"King James\" хэмээн дуудагддаг.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/LeBron_James_crop_2018.jpg/500px-LeBron_James_crop_2018.jpg"
+    },
+    {
+      "id": 10,
+      "emojis": "🎤🎸👱‍♀️✨",
+      "name": "Taylor Swift",
+      "options": ["Billie Eilish", "Taylor Swift", "Ariana Grande", "Selena Gomez"],
+      "hint1": "Улс: Америкийн Нэгдсэн Улс | Мэргэшил: Дуучин, хөгжмийн зохиолч",
+      "hint2": "Оны шилдэг цомог номинацид хамгийн олон удаа Грэммийн шагнал авсан уран бүтээлч бөгөөд \"Eras Tour\" аялан тоглолт нь дэлхийн түүхэнд хамгийн өндөр орлоготойд тооцогддог.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/191125_Taylor_Swift_at_the_2019_American_Music_Awards.png/500px-191125_Taylor_Swift_at_the_2019_American_Music_Awards.png"
+    }
+  ]
+}

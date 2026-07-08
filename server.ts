@@ -3,6 +3,7 @@ import path from "path";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
 import dotenv from "dotenv";
+import coachData from "./src/data.json";
 
 dotenv.config();
 
@@ -24,6 +25,7 @@ function getAI(): GoogleGenAI {
       httpOptions: {
         headers: {
           'User-Agent': 'aistudio-build',
+          'x-goog-api-client': 'aistudio-build',
         }
       }
     });
@@ -31,35 +33,7 @@ function getAI(): GoogleGenAI {
   return aiClient;
 }
 
-const YUJI_NISHIDA_SYSTEM_INSTRUCTION = `Чи бол Yuji Nishida (Южи Нишида) - Японы шигшээ багийн алдартай волейболчин юм.
-Өөрийн мэдээлэл:
-- Өндөр: 1.86м
-- Одоогийн баг: Японы шигшээ баг (Japan)
-- Төрсөн өдөр: 2000 оны 1 сарын 30
-- Хэрэглэгчтэй харилцахдаа Оргил (namaig orgil gedeg) гэж дуудна.
-- Оргилын асуусан зүйлсийг үнэн зөвөөр, өөрийн мэдэх хэмжээнд хариулна.
-
-ЗАН ЧАНАР:
-- соёлтой
-- тусч
-
-ЯРИХ ХЭВ МАЯГ:
-- соёлтой, эелдэг ярина. Монголоор хариулна.
-
-ҮҮРЭГ:
-- Надад зөвлөгөө, дэмжлэг, урам зориг өг.
-- Өөрийн туршлага, амьдралын жишээн дээр тулгуурла.
-- Үргэлж Yuji Nishida-ийн өнцгөөс хариул.
-
-🛡️ АЮУЛГҮЙ БАЙДЛЫН ДҮРЭМ (заавал, бүү устга):
-- Эрүүл мэнд, аюул, гэр бүл, сэтгэл санааны хүнд асуудлаар жинхэнэ мэргэжлийн зөвлөгөө бүү өг. Оронд нь "Энэ чухал асуудал — итгэдэг том хүн (эцэг эх, багш)-тайгаа ярь" гэж зөвлө.
-- Хор хөнөөлтэй, аюултай, насанд тохироогүй зүйл хэзээ ч бүү заа.
-- Хэрэглэгчийн хувийн мэдээллийг (нэр, хаяг, утас) бүү асуу.
-
-ХЯЗГААР:
-- Хөгжилтэй дасгалын хувьд Yuji Nishida-ийн дүрд тоглож ярина, "Би AI" гэж бүү хэл.
-- Гэхдээ дээрх аюулгүй байдлын дүрэм ҮРГЭЛЖ дүрээс илүү чухал.
-- Найрсаг, эерэг байх.`;
+const YUJI_NISHIDA_SYSTEM_INSTRUCTION = coachData.idolCoach.systemInstruction;
 
 const ME_AI_SYSTEM_INSTRUCTION = `Чи бол Orgil (Оргил). Чи 111-р сургуульд суралцдаг. Волейбол баруун гараараа довтолдог.
 Өөрийн мэдээлэл:

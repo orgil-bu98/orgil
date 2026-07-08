@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Menu, X, ArrowRight, Compass, Sparkles, Map, Database, ArrowUpRight, Layers, Volume2, VolumeX, Play, Pause, Music, Phone, Mail, Instagram, Facebook, Bot, Keyboard } from 'lucide-react';
+import { Menu, X, ArrowRight, Compass, Sparkles, Map, Database, ArrowUpRight, Layers, Phone, Mail, Instagram, Facebook, Bot, Keyboard } from 'lucide-react';
 import MeAIChatPopup from './components/MeAIChatPopup';
 import IdolCoachChat from './components/IdolCoachChat';
 import AnimeGuessGame from './components/AnimeGuessGame';
@@ -97,37 +97,7 @@ export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [digging, setDigging] = useState(false);
 
-  // Audio Player State
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [volume, setVolume] = useState(0.4);
-  const [isMuted, setIsMuted] = useState(false);
-  const [currentTrack, setCurrentTrack] = useState(0);
-  const [audioExpanded, setAudioExpanded] = useState(false);
 
-  const tracks = [
-    { name: 'Lithos Deep Ambient', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3' },
-    { name: 'Mantle Flow Synth', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' }
-  ];
-
-  useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.volume = isMuted ? 0 : volume;
-    }
-  }, [volume, isMuted]);
-
-  useEffect(() => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.play().catch(err => {
-          console.log("Audio play failed, user gesture might be needed first: ", err);
-          setIsPlaying(false);
-        });
-      } else {
-        audioRef.current.pause();
-      }
-    }
-  }, [isPlaying, currentTrack]);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -244,51 +214,8 @@ export default function App() {
           ))}
         </div>
 
-        {/* Right Action (Desktop only with Music Player) */}
+        {/* Right Action (Desktop only) */}
         <div className="hidden md:flex items-center gap-4 z-50">
-          <div className="flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-3 py-1.5 gap-2.5 transition-all duration-300">
-            <button 
-              onClick={() => setIsPlaying(!isPlaying)}
-              className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all active:scale-95 cursor-pointer"
-              title={isPlaying ? "Дууг зогсоох" : "Дууг тоглуулах"}
-            >
-              {isPlaying ? <Pause size={14} className="fill-white" /> : <Play size={14} className="fill-white translate-x-0.5" />}
-            </button>
-            
-            <div className="flex flex-col select-none">
-              <span className="text-[9px] font-mono text-white/50 leading-none">AMB_SOUND</span>
-              <span className="text-[11px] font-medium text-white max-w-[110px] truncate leading-tight">
-                {tracks[currentTrack].name}
-              </span>
-            </div>
-
-            {/* Simulated Animated Sound Wave Bars */}
-            <div className="flex items-end gap-[2px] h-4 px-1.5">
-              <div className={`w-[2px] bg-orange-500 rounded-full ${isPlaying ? 'animate-soundwave' : 'h-1'}`} style={{ animationDelay: '0.1s' }} />
-              <div className={`w-[2px] bg-orange-500 rounded-full ${isPlaying ? 'animate-soundwave' : 'h-1.5'}`} style={{ animationDelay: '0.3s' }} />
-              <div className={`w-[2px] bg-orange-500 rounded-full ${isPlaying ? 'animate-soundwave' : 'h-1'}`} style={{ animationDelay: '0.5s' }} />
-              <div className={`w-[2px] bg-orange-500 rounded-full ${isPlaying ? 'animate-soundwave' : 'h-2'}`} style={{ animationDelay: '0.2s' }} />
-            </div>
-
-            {/* Mute Button */}
-            <button 
-              onClick={() => setIsMuted(!isMuted)} 
-              className="text-white/60 hover:text-white transition-colors cursor-pointer"
-              title={isMuted ? "Дууг нээх" : "Дууг хаах"}
-            >
-              {isMuted ? <VolumeX size={14} /> : <Volume2 size={14} />}
-            </button>
-
-            {/* Change track button */}
-            <button
-              onClick={() => setCurrentTrack((currentTrack + 1) % tracks.length)}
-              className="text-[10px] font-mono text-orange-400 hover:text-orange-300 font-semibold uppercase px-1.5 transition-colors border-l border-white/10 cursor-pointer"
-              title="Дараагийн ая"
-            >
-              NEXT
-            </button>
-          </div>
-
           <button className="bg-white text-gray-900 text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-gray-100 transition-all duration-200 shadow-lg shadow-black/10 active:scale-95">
             Sign Up
           </button>
@@ -304,13 +231,7 @@ export default function App() {
         </button>
       </nav>
 
-      {/* HTML5 Audio Element */}
-      <audio 
-        ref={audioRef} 
-        src={tracks[currentTrack].url} 
-        loop 
-        preload="auto"
-      />
+
 
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
@@ -334,48 +255,6 @@ export default function App() {
           </div>
 
           <div className="flex flex-col gap-5 border-t border-white/10 pt-6">
-            {/* Mobile Music Player Control */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col gap-3">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Music className="text-orange-500 w-4 h-4 animate-pulse" />
-                  <span className="text-xs text-white/50 font-mono">LITHOS FM</span>
-                </div>
-                <button
-                  onClick={() => setCurrentTrack((currentTrack + 1) % tracks.length)}
-                  className="text-xs font-mono text-orange-400 font-semibold"
-                >
-                  СОЛИХ (NEXT)
-                </button>
-              </div>
-
-              <div className="flex items-center justify-between">
-                <p className="text-sm font-medium text-white truncate max-w-[180px]">{tracks[currentTrack].name}</p>
-                <button 
-                  onClick={() => setIsPlaying(!isPlaying)}
-                  className="bg-orange-500 text-white w-9 h-9 rounded-full flex items-center justify-center active:scale-90"
-                >
-                  {isPlaying ? <Pause size={16} /> : <Play size={16} className="translate-x-0.5" />}
-                </button>
-              </div>
-
-              <div className="flex items-center gap-2">
-                {isMuted ? <VolumeX className="text-white/40" size={14} /> : <Volume2 className="text-white/40" size={14} />}
-                <input 
-                  type="range" 
-                  min="0" 
-                  max="1" 
-                  step="0.1" 
-                  value={volume} 
-                  onChange={(e) => {
-                    setVolume(parseFloat(e.target.value));
-                    setIsMuted(false);
-                  }}
-                  className="w-full accent-orange-500 h-1 bg-white/20 rounded-lg cursor-pointer"
-                />
-              </div>
-            </div>
-
             <button className="w-full bg-white text-gray-900 text-base font-semibold py-4 rounded-full hover:bg-gray-100 transition-all active:scale-95 text-center">
               Sign Up
             </button>
