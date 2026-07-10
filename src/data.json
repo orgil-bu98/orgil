@@ -94,7 +94,7 @@
       "name": "Hunter x Hunter",
       "options": ["Hunter x Hunter", "One Piece", "Jujutsu Kaisen", "Haikyuu!!"],
       "defaultHint": "Гон аавыгаа хайж олохын тулд Хантерийн шалгалтанд орж, Килуа хүүтэй нөхөрлөно.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e0/Gon_Freecss.png"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5yomlpHAWv5K51mJQ2TsffPugZKsoh7Tm-AbukXs0CTuERFZdtyDFmyHl&s=10"
     },
     {
       "id": 11,
@@ -102,7 +102,7 @@
       "name": "Tokyo Ghoul",
       "options": ["Death Note", "Tokyo Ghoul", "One Piece", "Hunter x Hunter"],
       "defaultHint": "Хагас хүн хагас гүүл болсон Канеки Кэн болон кофе уух дуртай нууцлаг амьтад.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e5/Ken_Kaneki.png"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR12GltcURdI_K4vDRqw732IvVyoqZZBBMbjHDPnyLrkg&s=10"
     },
     {
       "id": 12,
@@ -110,7 +110,7 @@
       "name": "Sword Art Online",
       "options": ["Sword Art Online", "Attack on Titan", "Fullmetal Alchemist", "My Hero Academia"],
       "defaultHint": "Виртуал тоглоомонд бүрмөсөн түгжигдсэн тоглогчид болон хар хувцаст сэлэмчин Кирито.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a7/Kirito_SAO.png"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKLMyPFv2a_ZbbbLXceHiz5_Phc51t9KJNu5ydSrty2Q&s=10"
     },
     {
       "id": 13,
@@ -118,7 +118,7 @@
       "name": "Fullmetal Alchemist",
       "options": ["Naruto", "Jujutsu Kaisen", "Fullmetal Alchemist", "Dragon Ball Z"],
       "defaultHint": "Алдагдсан бие махбодоо буцаан авах гэсэн Элрик ах дүүсийн алхимын хүнд бэрх аялал.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/d/dc/Edward_Elric.png"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE-9jOxwc9V_lil_WCq7JaZNjqecg-ADF-hXwO80w4kQ&s=10"
     },
     {
       "id": 14,
@@ -126,7 +126,7 @@
       "name": "Your Name",
       "options": ["Spirited Away", "Your Name", "Tokyo Ghoul", "My Neighbor Totoro"],
       "defaultHint": "Сүүлт од унах шөнө бие биеийнхээ биед шилжсэн Мицуха охин болон Таки хүүгийн хайр.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/4/4b/Your_Name_poster.png"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNOqgdVJcVbaz3MwvdGWbyjKZq1NmqbBmMzD8_aeDwdg&s=10"
     },
     {
       "id": 15,
@@ -134,7 +134,7 @@
       "name": "Spirited Away",
       "options": ["Your Name", "Spirited Away", "Tokyo Ghoul", "My Neighbor Totoro"],
       "defaultHint": "Сүнсний хачирхалтай хотод ороод гахай болон хувирсан аав ээж, тэдэнд туслах Хаку луу.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_poster.png"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSINJHZKscWPPgIL0sTcPF6pnqcLODb2g1jLHgS_qmfOw&s=10"
     }
   ],
   "famousPeopleQuestions": [
@@ -145,7 +145,7 @@
       "options": ["Жамуха", "Өгөдэй Хаан", "Чингис Хаан", "Хубилай Хаан"],
       "hint1": "Улс: Монгол Улс | Мэргэшил: Их Хаан, цэргийн гарамгай жанжин",
       "hint2": "13-р зуунд тархай бутархай Монгол аймгуудыг нэгтгэж, хүн төрөлхтний түүхэн дэх хамгийн том хуурай газрын эзэнт гүрнийг байгуулсан суут хүн.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/YuanEmpPortraitGenghisKhann.jpg/500px-YuanEmpPortraitGenghisKhann.jpg"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYHJmBv85WKpRZY-hcSoUzzABxH_3-wkeGzE52gyqGXQ&s=10"
     },
     {
       "id": 2,
@@ -199,7 +199,7 @@
       "options": ["Bill Gates", "Steve Jobs", "Tim Cook", "Andy Rubin"],
       "hint1": "Улс: Америкийн Нэгдсэн Улс | Мэргэшил: Зохион бүтээгч, технологийн анхдагч",
       "hint2": "Apple компанийг үүсгэн байгуулагч бөгөөд ухаалаг гар утасны салбарыг орвонгоор нь өөрчилсөн анхны iPhone болон iPad төхөөрөмжүүдийг дэлхийд танилцуулсан хүн.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Steve_Jobs_Headshot_2010-CROP.jpg/500px-Steve_Jobs_Headshot_2010-CROP.jpg"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbWcFB9CX3izbNnqeCMFV0tel4uVG6jFgSgp2zk8V1rA&s=10"
     },
     {
       "id": 8,
@@ -208,7 +208,7 @@
       "options": ["Lionel Messi", "Cristiano Ronaldo", "Diego Maradona", "Pele"],
       "hint1": "Улс: Аргентин | Мэргэшил: Мэргэжлийн хөлбөмбөгчин",
       "hint2": "Аргентины багийг ахлан 2022 онд Дэлхийн аварга болгосон, хөлбөмбөгийн түүхэн дэх хамгийн олон Алтан бөмбөгийг (Ballon d'Or) хүртсэн дэлхийн домог.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_2018.jpg/500px-Lionel_Messi_2018.jpg"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd_QxpNvq86pbBmJufKTVVtWFCLpQNSl2Veg8h-0djEA&s"
     },
     {
       "id": 9,
@@ -217,7 +217,7 @@
       "options": ["Michael Jordan", "Kobe Bryant", "LeBron James", "Stephen Curry"],
       "hint1": "Улс: Америкийн Нэгдсэн Улс | Мэргэшил: Мэргэжлийн сагсан бөмбөгчин",
       "hint2": "NBA-ийн түүхэн дэх бүх цаг үеийн хамгийн олон оноо авсан амжилтыг эзэмшдэг, 4 удаагийн NBA аварга бөгөөд \"King James\" хэмээн дуудагддаг.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/LeBron_James_crop_2018.jpg/500px-LeBron_James_crop_2018.jpg"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDNy9yz917zu5awpYkLO3QujKTHmAz63fonBQFFdw2Xw&s=10"
     },
     {
       "id": 10,
@@ -226,7 +226,7 @@
       "options": ["Billie Eilish", "Taylor Swift", "Ariana Grande", "Selena Gomez"],
       "hint1": "Улс: Америкийн Нэгдсэн Улс | Мэргэшил: Дуучин, хөгжмийн зохиолч",
       "hint2": "Оны шилдэг цомог номинацид хамгийн олон удаа Грэммийн шагнал авсан уран бүтээлч бөгөөд \"Eras Tour\" аялан тоглолт нь дэлхийн түүхэнд хамгийн өндөр орлоготойд тооцогддог.",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/191125_Taylor_Swift_at_the_2019_American_Music_Awards.png/500px-191125_Taylor_Swift_at_the_2019_American_Music_Awards.png"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzRJzf8qqmZ3YY4Q1L9B95VsmsxD52Bs-1oN2-_4VjAQ&s=10"
     }
   ]
 }

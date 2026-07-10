@@ -216,9 +216,6 @@ export default function App() {
 
         {/* Right Action (Desktop only) */}
         <div className="hidden md:flex items-center gap-4 z-50">
-          <button className="bg-white text-gray-900 text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-gray-100 transition-all duration-200 shadow-lg shadow-black/10 active:scale-95">
-            Sign Up
-          </button>
         </div>
 
         {/* Mobile Hamburger Trigger */}
@@ -255,9 +252,6 @@ export default function App() {
           </div>
 
           <div className="flex flex-col gap-5 border-t border-white/10 pt-6">
-            <button className="w-full bg-white text-gray-900 text-base font-semibold py-4 rounded-full hover:bg-gray-100 transition-all active:scale-95 text-center">
-              Sign Up
-            </button>
             <p className="text-xs text-white/40 text-center font-mono">
               Lithos Geology Interactive Engine © 2026
             </p>
