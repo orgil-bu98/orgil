@@ -506,7 +506,7 @@ export default function App() {
 
             {/* Bottom-Right Contact Block */}
             <div 
-              className="absolute bottom-4 sm:bottom-8 left-5 right-5 sm:left-auto sm:right-10 md:right-14 w-[calc(100%-40px)] sm:w-[280px] flex flex-col items-start gap-4 z-50 hero-anim hero-fade bg-black/40 backdrop-blur-md p-5 rounded-2xl border border-white/10"
+              className="absolute bottom-4 sm:bottom-8 left-5 right-5 sm:left-auto sm:right-24 md:right-32 w-[calc(100%-40px)] sm:w-[280px] flex flex-col items-start gap-4 z-50 hero-anim hero-fade bg-black/40 backdrop-blur-md p-5 rounded-2xl border border-white/10"
               style={{ animationDelay: '0.85s' }}
             >
               <div className="flex items-center gap-2 text-white/40 font-mono text-[10px] tracking-widest uppercase">
@@ -639,6 +639,58 @@ export default function App() {
           </div>
         )}
       </section>
+      
+      {/* Integrated orgil1.vercel.app Website Section */}
+      {activeTab === 'Home' && (
+        <section className="relative w-full bg-[#050505] py-20 px-4 sm:px-8 md:px-16 border-t border-white/10 flex flex-col items-center">
+          <div className="max-w-6xl w-full flex flex-col gap-6">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-white/5 pb-6">
+              <div>
+                <span className="text-xs font-mono text-orange-500 uppercase tracking-widest font-semibold flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
+                  INTEGRATED PORTFOLIO
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-sans font-bold text-white tracking-tight mt-1">
+                  Orgil1 Vercel Вэбсайт
+                </h2>
+              </div>
+              <a 
+                href="https://orgil1.vercel.app" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-xs font-mono text-orange-400 hover:text-orange-300 font-semibold flex items-center gap-1.5 border border-orange-500/30 hover:border-orange-500/60 bg-orange-500/10 hover:bg-orange-500/15 px-4 py-2 rounded-xl transition-all hover:scale-105 active:scale-95"
+              >
+                ШИНЭ ТАВ ДЭЭР НЭЭХ ↗
+              </a>
+            </div>
+
+            {/* Custom Browser window frame style mock-up */}
+            <div className="w-full rounded-2xl overflow-hidden border border-white/10 bg-zinc-950/90 shadow-2xl flex flex-col">
+              {/* Browser bar */}
+              <div className="flex items-center justify-between px-4 py-3 bg-zinc-900 border-b border-white/5">
+                <div className="flex items-center gap-1.5">
+                  <div className="w-3 h-3 rounded-full bg-red-500/85" />
+                  <div className="w-3 h-3 rounded-full bg-yellow-500/85" />
+                  <div className="w-3 h-3 rounded-full bg-green-500/85" />
+                </div>
+                <div className="bg-black/40 border border-white/5 rounded-md px-3 py-1 text-[10px] font-mono text-zinc-400 w-1/2 max-w-sm truncate text-center select-none">
+                  https://orgil1.vercel.app
+                </div>
+                <div className="w-12" />
+              </div>
+              {/* Iframe Viewport */}
+              <div className="w-full relative h-[600px] sm:h-[700px] md:h-[800px] bg-black">
+                <iframe 
+                  src="https://orgil1.vercel.app" 
+                  title="Orgil1 Web Presentation" 
+                  className="absolute inset-0 w-full h-full border-0"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Decorative success feedback notification */}
       {digging && (
