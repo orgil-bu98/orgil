@@ -455,37 +455,58 @@ export default function App() {
 
             {/* Middle-Right Typer Showcase Block */}
             <div 
-              className="absolute top-[56%] sm:top-[62%] right-5 sm:right-10 md:right-14 -translate-y-1/2 z-50 flex flex-col items-end gap-2 hero-anim hero-fade bg-black/40 backdrop-blur-md p-4 rounded-2xl border border-white/10 w-[180px] sm:w-[200px]"
+              className="absolute top-[56%] sm:top-[62%] right-5 sm:right-10 md:right-14 -translate-y-1/2 z-50 flex flex-col items-end gap-2 hero-anim hero-fade bg-black/40 backdrop-blur-md p-4 rounded-2xl border border-white/10 w-[320px] sm:w-[360px]"
               style={{ animationDelay: '0.7s' }}
             >
               <span className="text-[9px] font-mono text-white/40 uppercase tracking-widest text-right w-full">ARCADE ARENA</span>
-              <div className="flex flex-col gap-2.5 w-full">
+              <div className="grid grid-cols-2 gap-3 w-full mt-1">
                 {/* Shark Typer Vercel Link with Image */}
                 <a 
                   href="https://typer-red-nu.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex flex-col items-start gap-1 p-3 rounded-xl bg-orange-500/10 hover:bg-orange-500/20 border border-orange-500/20 hover:border-orange-500/40 transition-all duration-300 hover:scale-105 active:scale-95 w-full text-left animate-pulse"
+                  className="group flex flex-col items-start p-2 rounded-xl bg-orange-500/10 hover:bg-orange-500/20 border border-orange-500/20 hover:border-orange-500/40 transition-all duration-300 hover:scale-[1.03] active:scale-95 w-full text-left"
                   title="Shark Typer Vercel тоглоом тоглох"
                   id="shark_typer_showcase_link"
                 >
+                  <img 
+                    src="/src/assets/images/shark_typer_logo_1783304665294.jpg" 
+                    alt="Shark Typer Logo" 
+                    className="w-full h-20 sm:h-24 object-cover rounded-lg border border-white/10 mb-1.5 transition-transform duration-500 group-hover:scale-[1.02]"
+                    referrerPolicy="no-referrer"
+                  />
                   <div className="flex items-center gap-1.5 text-orange-400">
-                    <img 
-                      src="/src/assets/images/shark_typer_logo_1783304665294.jpg" 
-                      alt="Shark Typer Logo" 
-                      className="w-5 h-5 rounded object-cover border border-orange-500/30"
-                      referrerPolicy="no-referrer"
-                    />
-                    <span className="text-[11px] font-bold font-mono tracking-wider uppercase">SHARK TYPER</span>
+                    <span className="text-[10px] font-bold font-mono tracking-wider uppercase">SHARK TYPER</span>
                   </div>
-                  <span className="text-[9px] text-zinc-400 font-mono mt-0.5 leading-tight">Аварга загаснаас зугтаж хурдан шивээрэй ↗</span>
+                  <span className="text-[8px] text-zinc-400 font-mono mt-0.5 leading-tight line-clamp-2">Аварга загаснаас зугтаж хурдан шивээрэй ↗</span>
+                </a>
+
+                {/* Bomb Defuser Vercel Link with Image */}
+                <a 
+                  href="https://bombdefuser-eight.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col items-start p-2 rounded-xl bg-red-500/10 hover:bg-red-500/20 border border-red-500/20 hover:border-red-500/40 transition-all duration-300 hover:scale-[1.03] active:scale-95 w-full text-left"
+                  title="Bomb Defuser Vercel тоглоом тоглох"
+                  id="bomb_defuser_showcase_link"
+                >
+                  <img 
+                    src="/src/assets/images/bomb_game_icon_1783647630173.jpg" 
+                    alt="Bomb Defuser Logo" 
+                    className="w-full h-20 sm:h-24 object-cover rounded-lg border border-white/10 mb-1.5 transition-transform duration-500 group-hover:scale-[1.02]"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="flex items-center gap-1.5 text-red-400">
+                    <span className="text-[10px] font-bold font-mono tracking-wider uppercase">BOMB DEFUSER</span>
+                  </div>
+                  <span className="text-[8px] text-zinc-400 font-mono mt-0.5 leading-tight line-clamp-2">Бөмбөгийг хугацаанаас нь өмнө аюулгүй болгоорой ↗</span>
                 </a>
               </div>
             </div>
 
             {/* Bottom-Right Contact Block */}
             <div 
-              className="absolute bottom-10 sm:bottom-24 left-5 right-5 sm:left-auto sm:right-10 md:right-14 w-full sm:w-[280px] flex flex-col items-start gap-4 z-50 hero-anim hero-fade bg-black/40 backdrop-blur-md p-5 rounded-2xl border border-white/10"
+              className="absolute bottom-4 sm:bottom-8 left-5 right-5 sm:left-auto sm:right-10 md:right-14 w-[calc(100%-40px)] sm:w-[280px] flex flex-col items-start gap-4 z-50 hero-anim hero-fade bg-black/40 backdrop-blur-md p-5 rounded-2xl border border-white/10"
               style={{ animationDelay: '0.85s' }}
             >
               <div className="flex items-center gap-2 text-white/40 font-mono text-[10px] tracking-widest uppercase">
